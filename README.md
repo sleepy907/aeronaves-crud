@@ -17,4 +17,4 @@ npx prisma migrate dev --name init
 npm run dev
 ```
 
-4. Acesse em: [http://localhost:3000/aeronaves](http://localhost:3000/aeronaves)
+4. Acesse em: [http://localhost:3000/aeronaves](http://localhost:3000)
