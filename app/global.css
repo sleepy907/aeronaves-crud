@@ -1,0 +1,181 @@
+.titulo1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    color: rgb(22, 21, 21);
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;       
+    gap: 20px;                  
+    padding: 30px 0;            
+}
+
+.botão1 {
+  display: flex;                  
+  justify-content: center;        
+  margin: 20px auto 0;            
+  width: min(320px, 90%);         
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid rgb(126, 197, 20);
+  color: rgb(44, 116, 8);
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.18s ease;
+}
+
+
+.imagem1 {
+  display: block;
+  margin: 0 auto 8px;         
+  max-width: 180px;           
+  height: auto;
+}
+
+
+.page-container {
+  padding: 24px;
+  max-width: 980px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #111827;
+}
+
+
+.aeronaves-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(2,6,23,0.04);
+  overflow: hidden;
+}
+
+.aeronaves-table th,
+.aeronaves-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.thead-row {
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+
+.lista:hover {
+  background: #fbfdff;
+}
+
+
+.acoes {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+
+.editar-link {
+  color: #2563eb;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+.editar-link:hover { text-decoration: underline; }
+
+
+.excluir-btn {
+  background: transparent;
+  border: 1px solid #fca5a5;
+  color: #b91c1c;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.excluir-btn:hover {
+  background: #fff1f2;
+}
+
+@media (max-width: 640px) {
+  .aeronaves-table th:nth-child(3),
+  .aeronaves-table td:nth-child(3),
+  .aeronaves-table th:nth-child(5),
+  .aeronaves-table td:nth-child(5) {
+    display: none;
+  }
+}
+
+
+.form-container {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(2,6,23,0.04);
+  margin-top: 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.form-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .12s, box-shadow .12s;
+}
+
+.form-input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96,165,250,0.08);
+}
+
+
+.save-btn {
+  background: rgb(44, 116, 8);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.save-btn:hover { background: rgb(16, 39, 5); }
+
+
+@media (max-width: 640px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+.form-container {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(2,6,23,0.04);
+  margin: 12px auto 0;     
+  max-width: 480px;        
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  gap: 12px;
+}
+
+.form-container label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Aeronave {
+  id         Int    @id @default(autoincrement())
+  modelo     String
+  fabricante String
+  ano        Int
+  capacidade Int
+}
